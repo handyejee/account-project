@@ -1,0 +1,20 @@
+### use balance
+### Send POST request with json body
+POST http://localhost:8080/transaction/use
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "accountNumber": "1000000001",
+  "amount": 10000
+}
+
+### cancel balance
+POST http://localhost:8080/transaction/cancel
+Content-Type: application/json
+
+{
+  "transactionId": "de47eb4d2e8d4304a5301a5349b1b6b4",
+  "accountNumber": "1000000001",
+  "amount": 10000
+}
